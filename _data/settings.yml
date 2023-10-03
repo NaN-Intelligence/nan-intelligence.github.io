@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Argon Jekyll Theme
-  favicon_image: /assets/img/favicon.png
+  favicon_image: /assets/img/favicon_v2.png
 
 header_settings:
   logo_image: /assets/img/brand/white.png
@@ -63,7 +63,7 @@ menu_settings:
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Argon & Jekyll, together at last.
+  footer_tagline: NaN Intelligence
 
 contact_settings:
   form_action: 'https://formspree.io/hello@jekyllthemes.io'
@@ -72,16 +72,16 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: 'https://www.facebook.com/jekyllthemes/'
-  twitter_url: 'https://twitter.com/jekyllthemesio'
-  instagram_url: 'https://twitter.com/jekyllthemesio'
+  facebook_url: '' #https://www.facebook.com/jekyllthemes/'
+  twitter_url: '' #https://twitter.com/jekyllthemesio'
+  instagram_url: '' #https://twitter.com/jekyllthemesio'
   youtube_url: ''
   vimeo_url: ''
   pinterest_url: ''
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  github_url: 'https://twitter.com/jekyllthemesio'
+  github_url: '' #https://twitter.com/jekyllthemesio'
   reddit_url: ''
   linkedin_url: ''
 
