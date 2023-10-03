@@ -1,2 +1,0 @@
-# nanintelligence.ai
-website
