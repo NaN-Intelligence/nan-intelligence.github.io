@@ -1,10 +1,10 @@
 basic_settings:
   site_title: NaN Intelligence
-  favicon_image: /assets/img/favicon_v2.png
+  favicon_image: /assets/img/naneye_logo.png
 
 header_settings:
-  logo_image: /assets/img/brand/white.png
-  mobile_logo_image: /assets/img/brand/blue.png
+  logo_image: /assets/img/naneye_transparent_background.png
+  mobile_logo_image: /assets/img/naneye_logo.png
   # Choose a color for your header [blue, dark, light].
   theme: dark
   # If the page has a featured image, it turns transparent if allow_transparent is set to "yes".
@@ -32,31 +32,33 @@ blog_settings:
 menu_settings:
   menu_items:
     - title: 'Home'
-      submenu_items:
-      - title: Landing Page
-        url: /
-        icon: ni-spaceship text-success    
-      - title: Blog
-        url: /blog
-        icon: ni-books text-primary
+      url: '/'
+      #submenu_items:
+      #- title: Landing Page
+      #  url: /
+      #  icon: ni-spaceship text-success    
+      #- title: Blog
+      #  url: /blog
+      #  icon: ni-books text-primary
     #- title: 'Features'
     #  url: '/features'     
     #- title: Pricing
     #  url: /pricing        
     - title: 'Blog'
-      submenu_items:
-      - title: Blog
-        url: /blog
-        icon: ni-books text-primary
-      - title: Narrow Grid Example
-        url: /blog-narrow-example
-        icon: ni-align-center text-success
-      - title: Wide Grid Example
-        url: /blog-grid-example
-        icon: ni-image text-info
-      - title: List Example
-        url: /blog-list-example
-        icon: ni-bullet-list-67 text-default    
+      url: /blog
+      #submenu_items:
+      #- title: Blog
+      #  url: /blog
+      #  icon: ni-books text-primary
+      #- title: Narrow Grid Example
+      #  url: /blog-narrow-example
+      #  icon: ni-align-center text-success
+      #- title: Wide Grid Example
+      #  url: /blog-grid-example
+      #  icon: ni-image text-info
+      #- title: List Example
+      #  url: /blog-list-example
+      #  icon: ni-bullet-list-67 text-default    
     - title: 'About'
       url: '/about'
     - title: 'Contact'
@@ -81,20 +83,17 @@ social_settings:
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  github_url: '' #https://twitter.com/jekyllthemesio'
+  github_url: 'https://github.com/NaN-Intelligence' #https://twitter.com/jekyllthemesio'
   reddit_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/company/nan-intelligence/'
 
 authors:
-  tom:
-    name: Tom
-    picture: /assets/img/faces/team-1.jpg
-  jane:
-    name: Jane
-    picture: /assets/img/faces/team-4.jpg
-  michael:
-    name: Michael
-    picture: /assets/img/faces/michael.jpg
+  aladdin:
+    name: Aladdin Persson
+    picture: /assets/img/faces/aladdin.jpg
+  sanna:
+    name: Sanna Persson
+    picture: /assets/img/faces/sanna.jpg
 
 advanced_settings:
   analytics_code: 
