@@ -1,137 +1,38 @@
 ---
-title: How accurate is Apple Watch Energy Expenditure?
+title: How accurate is the Apple Watch's Energy Expenditure?
 date: 2024-07-26 00:00:00
-description: This is a demo post that shows what you can do inside portfolio and blog posts. We’ve included everything you need to create engaging posts and case studies to show off your work in a beautiful way.
+description: When tracking calories, it's important to know your maintenance calorie level. In this post, we explore whether the Apple Watch is accurate enough to set that baseline.
 featured_image: /assets/img/pages/photo-15.jpg
 author: Aladdin Persson
 ---
 
-This is a that shows everything you can do inside pages and blog posts.
+When losing weight, the most accurate and reliable method is tracking calories. Ideally, you want to aim for a 0.5-1% body weight loss per week. For this, you need to have some idea of where your maintenance calories are. You can use a calculator such as the [Mifflin-St Jeor](https://www.freedieting.com/calorie-calculator), which generally provides a good baseline. Then, you'd titrate and adjust your calorie consumption based on the actual weight loss you see on the scale to achieve that 0.5-1% body weight loss per week.
 
-We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
+However, although what I described above is a quite concrete guide to lose weight, your activity levels and calorie consumption will vary depending on the day. This means some days you'll lose more weight than others, and over the course of cutting weight, you might reduce daily activity, thus reducing your calorie consumption. This is something the watch could help with tracking, and it could also replace the Mifflin-St Jeor calculator for TDEE (Total Daily Energy Expenditure) in setting that baseline. The question we want to answer is: Is it accurate, and can we use it as a baseline?
 
-**Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+For the past 30+ days, I've weighed myself daily, worn the watch to track energy expenditure, and tracked all calories I've consumed. Let's start by looking at my energy expenditure graph:
 
-You can create lists:
+[![TDEE Chart](../assets/img/blog/apple-watch-tdee/tdee_chart.png)](../assets/img/blog/apple-watch-tdee/tdee_chart.png "Click to view full size")
 
-* Simple bulleted lists
-* Like this one
-* Are cool
+Here we can see, for example, that energy expenditure started increasing quite a bit since April of 2024, which aligns well with when I started exercising more frequently. We can also see that the variation is quite large day to day, where the resting energy in blue stays quite static, but the active energy has the most fluctuations. If we look a bit closer at the data:
 
-And:
-
-1. Numbered lists
-2. Like this other one
-3. Are great too
-
-You can also add blockquotes, which are shown at a larger width to help break up the layout and draw attention to key parts of your content:
-
-> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.”
-
-The theme also supports markdown tables: To apply styling to it, be sure to apply a class by adding {: .table .table-responsive } below the table. More options for table styling can be found in the [Argon Design System Pro documentation here](https://demos.creative-tim.com/argon-design-system-pro/).
-
-| Item                 | Author        | Supports tables? | Price |
-|----------------------|---------------|------------------|-------|
-| Duet Jekyll Theme    | Jekyll Themes | Yes              | $49   |
-| Index Jekyll Theme   | Jekyll Themes | Yes              | $49   |
-| Journal Jekyll Theme | Jekyll Themes | Yes              | $49   |
+| Category     | TDEE (calories) | Active Energy (calories) | Resting Energy (calories) |
+|--------------|-----------------|--------------------------|---------------------------|
+| Averages     | 2963            | 720                      | 2243                      |
+| Workout day  | 3320            | 1082                     | 2238                      |
+| Recovery day | 2584            | 336                      | 2247                      |
 {: .table .table-responsive}
 
-And footnotes[^1], which link to explanations[^2] at the bottom of the page[^3].
+We notice that, in fact, the total average during that weight cut period was about 2963 calories in expenditure, but the difference between a workout day and a non-workout day (strength training and usually some cardio, 4x a week) is quite large. If compliance to maintaining a calorie deficit would be a challenge, I think based on this (assuming the energy expenditure estimates are accurate, which we'll get to in a moment), we would want to vary the calorie consumption based on workout and non-workout days. I believe the impact on muscle mass loss during a weight cut is most likely quite minimal, but I can attest that maintaining the calorie deficit is (slightly) more difficult on a hard workout day than a recovery day, which makes sense given the difference in expenditure shown above.
 
-[^1]: Beautiful modern, minimal theme design.
-[^2]: Powerful features to show off your work.
-[^3]: Maintained and supported by the theme developer.
+The main question now: Are these estimates even accurate? There have been a few studies looking at this with varying results, i.e in some cases it overestimates and others underestimates.
 
-You can throw in some horizontal rules too:
+- [Accuracy in Wrist-Worn, Sensor-Based Measurements of Heart Rate and Energy Expenditure in a Diverse Cohort](https://www.mdpi.com/2075-4426/7/2/3)
+- [Accuracy of Apple Watch Measurements for Heart Rate and Energy Expenditure in Patients With Cardiovascular Disease: Cross-Sectional Study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6444219/)
+- [Accuracy of Heart Rate Watches: Implications for Weight Management](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4883747/) 
 
----
+The challenge here is also that I imagine Apple is tweaking and updating the algorithms for making the calculations more accurate over time, as well as that it might vary depending on the watch model. I can imagine that depending on various factors such as having inaccurate personal data (weight, height, age), or choosing the incorrect workout type, the calorie consumption would become very different for the same workout. So in general, we know it's not going to be *very* accurate based on the studies. However, we also need to keep in mind that as long as it's in the correct ballpark, for a weight cut we are going to be in a ~500 calorie or so deficit (depending on your body weight to keep to the 0.5%-1% BW loss per week), so if it were 100 or 200 calories inaccurate, that would actually still be okay to use as a baseline. If we look at my actual weight compared to the estimated weight loss I should have based on my energy expenditure, the graph looks as follows:
 
-### Image galleries
+[![TDEE Chart](../assets/img/blog/apple-watch-tdee/actual_vs_estimated_weight.png)](../assets/img/blog/apple-watch-tdee/actual_vs_estimated_weight.png "Click to view full size")
 
-You can use the slider from the Argon Design System by adding HTML to your posts like below:
-
-*For help with this functionality, [see the Argon Design System Pro documentation here](https://demos.creative-tim.com/argon-design-system-pro/).*
-
-   <section style="position:relative">
-      <div class="blogGlide fullWidth gliderMargin">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="../assets/img/theme/sofia-kuniakina.jpg">
-            </li>
-            <li class="glide__slide">
-              <img src="../assets/img/theme/sacha-styles.jpg">
-            </li>
-            <li class="glide__slide">
-              <img src="../assets/img/theme/victor-garcia.jpg">
-            </li>
-            <li class="glide__slide">
-              <img src="../assets/img/theme/doyoun-seo.jpg">
-            </li>
-            <li class="glide__slide">
-              <img src="../assets/img/theme/ayo-ogunseinde.jpg">
-            </li>
-          </ul>
-        </div>
-        <div class="glide__arrows d-flex justify-content-center mt-4 position-static" data-glide-el="controls">
-          <button class="glide__arrow text-default position-static" data-glide-dir="<"><i class="ni ni-bold-left"></i></button>
-          <button class="glide__arrow text-default position-static" data-glide-dir=">"><i class="ni ni-bold-right"></i></button>
-        </div>
-      </div>
-    </section>
-
-Just copy the HTML markup below and swap the images:
-
-```html
-<div class="blogGlide fullWidth">
-    <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-        <li class="glide__slide">
-            <img src="sofia-kuniakina.jpg">
-        </li>
-        <li class="glide__slide">
-            <img src="victor-garcia.jpg">
-        </li>
-        </ul>
-    </div>
-    <div class="glide__arrows d-flex justify-content-center mt-2" data-glide-el="controls">
-          <button class="glide__arrow text-default position-static" data-glide-dir="<"><i class="ni ni-bold-left"></i></button>
-          <button class="glide__arrow text-default position-static" data-glide-dir=">"><i class="ni ni-bold-right"></i></button>
-    </div>
-</div>
-```
-
-
-```python
-def hello_world():
-    print("hello world")
-```
-
-*See what we did there? Code and syntax highlighting is built-in too!*
-
-Change the number inside the 'columns' setting to create different types of gallery for all kinds of purposes. You can even click on each image to seamlessly enlarge it on the page.
-
----
-
-### What about videos?
-
-Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
-
-<iframe src="https://player.vimeo.com/video/88357807?color=6c6e95&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
----
-
-### What about a contact form?
-
-We've made a contact form that you can use with [Formspree](https://formspree.io/create/jekyllthemes) to handle up to 50 submissions per month for free. You could also easily switch out the end-point to use another contact form service.
-
-Just swap the Formspree details in the ```_data/settings.yml``` file.
-
----
-
-## Pretty cool, huh?
-
-We've packed this theme with powerful features to show off your work.
-
-Why not put them to use on your new website?
+We can see that the actual weight varies, which is common as water weight fluctuates, mostly based on the amount of carbohydrates consumed. Here we can also see that depending on which day during the cut, the Apple Watch overestimates and underestimates, and it's not clear that it's consistently overestimating or underestimating. I set my calorie consumption to be 2300 calories per day, but the weight fluctuations causing error are well within the error I could be making in measurement (a few of the days I've eaten out for lunch and tried to estimate). Based on the studies, reading people's experiences ([Andrej Karpathy's biohacking post](https://karpathy.github.io/2020/06/11/biohacking-lite/)), and comparing to more "old school" calculators such as Mifflin-St Jeor, I would lean towards the watch overestimating rather than underestimating. But again, if we are assuming a deficit of about ~500+ calories per day, I think using the watch as a baseline is sufficiently good.

@@ -11,7 +11,7 @@ header_settings:
   allow_transparent: "yes"
 
 home_settings:
-  # Choose a layout for your home page:
+    # Choose a layout for your home page:
     # landing – an example landing page made using the Argon design system
     # blog – use your blog posts as the home page
   theme: landing
@@ -29,6 +29,7 @@ blog_settings:
   # 1. See all the icons available here https://demos.creative-tim.com/argon-design-system-pro/docs/1.0/foundation/icons.html
   # 2. Get the name of the icon e.g basket, then prefix with ni to make ni-basket. 
   # 3. Add a color of the icon - text-primary, text-success, text-info, text-danger, text-warning and text-default all work! 
+
 menu_settings:
   menu_items:
     - title: 'Home'
@@ -74,16 +75,16 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: '' #https://www.facebook.com/jekyllthemes/'
-  twitter_url: '' #https://twitter.com/jekyllthemesio'
-  instagram_url: '' #https://twitter.com/jekyllthemesio'
+  facebook_url: '' 
+  twitter_url: '' 
+  instagram_url: '' 
   youtube_url: ''
   vimeo_url: ''
   pinterest_url: ''
   tumblr_url: ''
   dribbble_url: ''
   behance_url: ''
-  github_url: 'https://github.com/NaN-Intelligence' #https://twitter.com/jekyllthemesio'
+  github_url: 'https://github.com/NaN-Intelligence'
   reddit_url: ''
   linkedin_url: 'https://www.linkedin.com/company/nan-intelligence/'
 
