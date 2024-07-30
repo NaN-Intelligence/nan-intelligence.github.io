@@ -121,9 +121,7 @@ If you want to add some pre-made sections, such as a pricing table, carousel of 
 This is the blog listing page, which shows all your blog posts. You can edit the same things as on the home page to customise it for your website.
 
 #### Sample Content and Other Pages
-
 We have included some example pages in `_pages` to help you get started and easily see how the included components are displayed.  
-
 You may delete them or modify them to suit your needs.  You can edit some details in the Front Matter at the top of the page:
 
 - `title` – this sets the page title, which shows up in the browser's title bar and on search engine results, social shares etc.
