@@ -1,11 +1,13 @@
 .navbar {
   .dropdown {
     .dropdown-item {
+
       &:active,
       &:focus:active,
       &:active {
         color: $gray-900 !important;
       }
+
       -webkit-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
@@ -15,7 +17,11 @@
   &.navbar-main {
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 99;
+    margin: 0;
+    padding-top: 0;
 
     .dropdown-menu-footer {
       background-color: #F6F9FC;
@@ -45,6 +51,6 @@
           }
         }
       }
-    }  
+    }
   }
 }

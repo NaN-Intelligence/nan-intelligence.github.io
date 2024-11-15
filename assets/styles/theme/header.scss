@@ -31,8 +31,8 @@
 
   &.skew-top {
     &:after {
-      height: 370px!important;
-      top: -220px!important;
+      height: 370px !important;
+      top: -220px !important;
 
     }
   }
@@ -51,4 +51,9 @@
 
 .bg-image {
   width: 100%;
+}
+
+.page-header {
+  padding-top: 12rem;
+  padding-bottom: 3rem;
 }

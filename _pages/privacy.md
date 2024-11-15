@@ -1,11 +1,13 @@
 ---
-title: Privacy Policy
+title: ''
 description: Privacy Policy for NaNEye
-layout: default
 ---
 
-## Privacy Policy
+<br/>
+<br/>
+<br/>
 
+## Privacy Policy
 Last updated: 2024-11-15
 
 ### Introduction
