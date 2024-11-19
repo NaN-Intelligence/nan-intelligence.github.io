@@ -1,3 +1,12 @@
+---
+title: "Building a Calorie Estimator with GPT-4: A Step-by-Step Guide"
+date: 2024-11-19 00:00:00
+description: Learn how to build an AI-powered calorie estimator using GPT-4's image analysis capabilities to automatically estimate calories from meal photos.
+featured_image: /assets/img/pages/gpt_part2.jpg
+author: Aladdin Persson
+---
+
+
 # Building a Calorie Estimator with GPT-4: A Step-by-Step Guide
 
 Welcome to the second post in the **DiGPT** series! In this post, we’ll dive into the actual process of building a calorie estimator using GPT-4. If you missed the first post, don’t worry—you can still follow along as we’ll be building this project iteratively. We’ll start with something simple and gradually add more functionality over time.
