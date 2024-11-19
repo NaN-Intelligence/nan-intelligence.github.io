@@ -1,21 +1,20 @@
 ---
 title: "Building a Calorie Estimator with GPT-4: A Step-by-Step Guide"
 date: 2024-11-19 00:00:00
-description: Learn how to build an AI-powered calorie estimator using GPT-4's image analysis capabilities to automatically estimate calories from meal photos.
+description: "Learn how to build an AI-powered calorie estimator using GPT-4's image analysis capabilities to automatically estimate calories from meal photos."
 featured_image: /assets/img/pages/gpt_part2.jpg
 author: Aladdin Persson
 ---
 
 
-# Building a Calorie Estimator with GPT-4: A Step-by-Step Guide
 
-Welcome to the second post in the **DiGPT** series! In this post, we’ll dive into the actual process of building a calorie estimator using GPT-4. If you missed the first post, don’t worry—you can still follow along as we’ll be building this project iteratively. We’ll start with something simple and gradually add more functionality over time.
+Welcome to the second post in the **DietGPT** series! In this post, we’ll dive into the actual process of building a calorie estimator using GPT-4. If you missed the first post, don’t worry—you can still follow along as we’ll be building this project iteratively. We’ll start with something simple and gradually add more functionality over time.
 
 Before we jump into the technical details, if you haven’t already, feel free to join the [NaNEye Discord](https://discord.gg/Q2Xz5Atzze) and check out the [NaNEye app](https://apps.apple.com/us/app/naneye/id6612032845) if you’re interested in tracking your health metrics like calories, macronutrients, and more.
 
 In this post, we’ll focus on using GPT-4 to estimate the calorie content of meals directly from images. We won’t be using a food database for this; instead, we’ll rely on GPT-4’s ability to analyze images and provide calorie estimates. Let’s get started!
 
-## The Challenge: Estimating Calories from Images
+### The Challenge: Estimating Calories from Images
 
 Estimating the calorie content of a meal from an image is a challenging task. Even for humans, it can be difficult to accurately gauge portion sizes and hidden ingredients. However, with the power of GPT-4, we can attempt to automate this process.
 
@@ -46,11 +45,11 @@ This prompt ensures that GPT-4 follows a structured approach to analyzing the im
 
 You might wonder why we’re not using structured JSON output for this task. While JSON output can be useful, I’ve found that it tends to degrade performance in this specific use case. Additionally, using a step-by-step approach in the prompt improves the accuracy of the estimates.
 
-## The Code: Building the Calorie Estimator
+### The Code: Building the Calorie Estimator
 
 Now that we have our prompt, let’s move on to the code. We’ll be using the GPT-4 API to send images and receive calorie estimates. Here’s a breakdown of the code:
 
-### Imports
+#### Imports
 
 We’ll start by importing the necessary libraries:
 
@@ -65,7 +64,7 @@ import base64
 import openai
 ```
 
-### The Calorie Estimator Class
+#### The Calorie Estimator Class
 
 Next, we’ll create a class `CalorieEstimator` that handles the image processing and API requests.
 
@@ -118,14 +117,14 @@ class CalorieEstimator:
         return None
 ```
 
-### Explanation of the Code
+#### Explanation of the Code
 
 1. **`image_to_base64`**: Converts the image to a base64 string, which is required by the GPT-4 API.
 2. **`analyze_image`**: Sends the image to GPT-4 and retrieves the calorie estimate.
 3. **`make_api_request`**: Handles the API request to GPT-4. We use the `tenacity` library to retry the request in case of rate limits.
 4. **`parse_response`**: Extracts the calorie estimate from the GPT-4 response using a regular expression.
 
-### Running the Estimator
+#### Running the Estimator
 
 Now that we have the `CalorieEstimator` class, we can use it to estimate the calories for a batch of images. Here’s how we can do that:
 
@@ -151,7 +150,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-### Adding a Progress Bar
+#### Adding a Progress Bar
 
 To track the progress of the calorie estimation, we can add a progress bar using `tqdm`. This will give us a visual indication of how many images have been processed.
 
@@ -179,15 +178,15 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-## Results and Next Steps
+### Results and Next Steps
 
 After running the calorie estimator on our dataset of 84 images, we obtained calorie estimates for each meal. However, some estimates took longer than others, and there were a few discrepancies between the estimated and actual calorie counts.
 
 In the next post, we’ll dive deeper into analyzing the accuracy of these estimates and explore ways to improve the model’s performance. We’ll also look at how we can handle edge cases and improve the overall user experience.
 
-## Conclusion
+### Conclusion
 
-This was the first step in building our **DiGPT** calorie estimator. While the initial results are promising, there’s still room for improvement. In future posts, we’ll continue refining the model and adding more functionality, such as tracking macronutrients and micronutrients.
+This was the first step in building our **DietGPT** calorie estimator. While the initial results are promising, there’s still room for improvement. In future posts, we’ll continue refining the model and adding more functionality, such as tracking macronutrients and micronutrients.
 
 If you found this post helpful, consider joining the [NaNEye Discord](https://discord.gg/Q2Xz5Atzze) and trying out the [NaNEye app](https://apps.apple.com/us/app/naneye/id6612032845). Stay tuned for the next post in the series, where we’ll analyze the accuracy of our calorie estimates and explore ways to improve them.
 
