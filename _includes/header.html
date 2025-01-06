@@ -14,8 +14,10 @@
 
         <div class="container">
           {% if site.data.settings.header_settings.logo_image %}
-          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">
-            <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}">
+          <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5" style="padding: 10px;">
+            <img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" style="padding: 0;">
+            <span class="ml-2 display-4"
+              style="padding-top: 2px; display: inline-block; vertical-align: middle; text-transform: none;">NanEye</span>
           </a>
           {% else %}
           <a href="{{ site.baseurl }}/" class="navbar-brand mr-lg-5">

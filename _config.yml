@@ -1,7 +1,7 @@
 site: NaN Intelligence
 
 url: https://nan-intelligence.github.io
-baseurl: 
+baseurl:
 
 collections:
   pages:
@@ -9,27 +9,24 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /articles/:slug
     type: "post"
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post" 
+      layout: "post"
 
 sass:
   sass_dir: assets/styles
@@ -41,5 +38,4 @@ plugins:
   - jekyll-sitemap
 
 paginate: 6
-paginate_path: "/blog/page:num/"
-  
+paginate_path: "/articles/page:num/"

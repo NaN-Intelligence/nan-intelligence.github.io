@@ -13,6 +13,7 @@
       }
     }
   }
+
   .index-page {
     .pagination-area {
       margin-top: 4rem;
@@ -61,11 +62,14 @@
     .bg-image {
       display: none;
     }
+
     .section-hero {
-      background-image: url('../../assets/img/kit/pro/ill/index_bg.svg');
-      background-position: right;
+      //background-image: url('../../assets/img/kit/pro/ill/index_bg.svg');
+      //background-position: right;
+      background: none;
     }
   }
+
   .navbar {
     .navbar-brand {
       margin-top: 10px;
@@ -75,7 +79,7 @@
       width: 100%;
       position: relative;
       display: flex;
-      justify-content: space-between!important;
+      justify-content: space-between !important;
     }
   }
 }
@@ -86,6 +90,7 @@
       background-position: 90% !important;
       padding-bottom: 0;
     }
+
     .section-components {
       padding-top: 0;
     }
